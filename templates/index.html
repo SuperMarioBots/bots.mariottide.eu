@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{% set bots = get_section(path='bot/_index.md', lang=lang) %}
+<section class="hero">
+  <div class="chat">
+    <p class="bubble bubble--in">{{ section.extra.ask }}</p>
+    <p class="bubble bubble--out">{{ section.extra.answer }}</p>
+  </div>
+  <h1 class="hero__title">{{ section.title }}</h1>
+  <p class="hero__lede">{{ trans(key='tagline', lang=lang) }}</p>
+</section>
+
+<section class="keyboard" aria-label="{{ trans(key='all_bots', lang=lang) }}">
+  {% for p in bots.pages %}
+  <a class="key" href="{{ p.permalink }}">
+    <span class="key__emoji" aria-hidden="true">{{ p.extra.emoji }}</span>
+    <span class="key__label">{{ p.title }}</span>
+    <span class="key__blurb">{{ p.description }}</span>
+  </a>
+  {% endfor %}
+</section>
+
+<section class="prose">
+{{ section.content | safe }}
+</section>
+{% endblock %}

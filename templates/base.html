@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ config.title }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ config.description }}{% endblock %}">
+<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+<a class="skip" href="#main">{{ trans(key='skip_to_content', lang=lang) }}</a>
+<header class="site-head">
+  <a class="wordmark" href="{{ get_url(path='@/_index.md', lang=lang) }}">
+    <span class="wordmark__slash">/</span><span class="wordmark__name">{{ trans(key='wordmark', lang=lang) }}</span>
+  </a>
+  <nav class="site-nav">
+    <a href="{{ get_url(path='@/guida/_index.md', lang=lang) }}">{{ trans(key='nav_guides', lang=lang) }}</a>
+    {%- set other = 'en' if lang == 'it' else 'it' -%}
+    {%- set translations = page?.translations or section?.translations or [] -%}
+    {%- set target = [t.permalink for t in translations if t.lang == other] -%}
+    {% if target %}
+    <a class="lang" href="{{ target[0] }}">{{ trans(key='lang_other', lang=lang) }}</a>
+    {% else %}
+    <a class="lang lang--missing" href="{{ get_url(path='@/_index.md', lang=other) }}" title="{{ trans(key='only_italian', lang=lang) }}">{{ trans(key='lang_other', lang=lang) }}</a>
+    {% endif %}
+  </nav>
+</header>
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+<footer class="site-foot">
+  <p class="site-foot__links">
+    <a href="{{ config.extra.telegram_channel }}">Super Mario Bots</a>
+    <a href="{{ config.extra.contact }}">@mario_ttide</a>
+    <a href="{{ get_url(path='@/guida/supporto.md', lang=lang) }}">{{ trans(key='nav_support', lang=lang) }}</a>
+  </p>
+  <p class="site-foot__note">{{ trans(key='foot_note', lang=lang) }}</p>
+</footer>
+</body>
+</html>

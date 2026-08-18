@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Pagina non trovata · {{ config.title }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="chat">
+    <p class="bubble bubble--in">Questa pagina?</p>
+    <p class="bubble bubble--out">Non esiste, o non esiste più.</p>
+  </div>
+  <h1 class="hero__title">404</h1>
+  <p class="hero__lede">Riparti dall'elenco dei bot.</p>
+</section>
+<div class="prose">
+  <p class="cta"><a href="{{ get_url(path='@/_index.md') }}">{{ trans(key='back_home', lang=lang) }}</a></p>
+</div>
+{% endblock %}
