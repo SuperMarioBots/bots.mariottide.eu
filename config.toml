@@ -1,0 +1,48 @@
+base_url = "https://bots.mariottide.eu"
+title = "I bot di Mario"
+description = "Guide d'uso dei bot Telegram di Mario-ttide, in italiano."
+default_language = "it"
+compile_sass = true
+minify_html = true
+
+[translations]
+tagline = "Guide d'uso, in italiano, dei bot Telegram che ho scritto."
+nav_guides = "Guide"
+nav_support = "Supporto"
+all_bots = "Tutti i bot"
+clone_cta = "Crea il tuo clone"
+only_italian = "Solo in italiano"
+back_home = "Torna alla home"
+on_this_page = "In questa pagina"
+lang_other = "English"
+skip_to_content = "Vai al contenuto"
+wordmark = "bot di Mario"
+foot_note = "Tutti i bot sono gratuiti. Nessuno è autorizzato a venderli."
+public_bot = "Il bot pubblico"
+public_bot_note = "Puoi usarlo così com'è, senza clonare niente. Un clone tuo però è più veloce, perché non divide i limiti di Telegram con le altre chat."
+clone_only = "Questo bot non ha una versione pubblica: dipende dai dati che ci metti dentro, quindi si usa solo creando un clone tuo."
+
+[languages.en]
+title = "Mario's bots"
+description = "User guides for Mario-ttide's Telegram bots."
+
+[languages.en.translations]
+tagline = "User guides for the Telegram bots I write."
+nav_guides = "Guides"
+nav_support = "Support"
+all_bots = "All bots"
+clone_cta = "Create your own clone"
+only_italian = "Italian only"
+back_home = "Back to home"
+on_this_page = "On this page"
+lang_other = "Italiano"
+skip_to_content = "Skip to content"
+wordmark = "Mario's bots"
+foot_note = "Every bot is free. Nobody is authorised to sell them."
+public_bot = "The public bot"
+public_bot_note = "You can use it as it is, no cloning needed. Your own clone is faster though, because it does not share Telegram's rate limits with every other chat."
+clone_only = "This bot has no public version: it lives off the data you put in it, so you use it by creating your own clone."
+
+[extra]
+telegram_channel = "https://t.me/SuperMarioBots"
+contact = "https://t.me/mario_ttide"
