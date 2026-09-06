@@ -190,6 +190,7 @@ The `/start` menu for managers holds these entries:
 | **⚙️ Settings** | Template, buttons, sublists, list format, booking tag |
 | **➕ Add Channel** and **➖ Remove Channel** | Register or drop a chat by forwarding a message from it |
 | **🗒 List chats** | The chats registered on the bot |
+| **📡 Switch to forwarder mode** | Turns the bot into a forwarder, always available even with no lists or bookings |
 | **➕ Add list** and **➖ Remove list** | Run several lists in parallel on the same bot |
 | **🌐 Language** | Changes language |
 | **📔 Guide** | Opens the bot guide |
@@ -222,8 +223,10 @@ Without anybody typing anything, the bot:
 
 ## Forwarding mode
 
-**📡 Switch to forwarder mode** changes the bot's job. The whole list and
-booking side disappears and what is left is a forwarder: you define one or
+**📡 Switch to forwarder mode**, on the main `/start` menu, changes the bot's
+job. The button is always there, even on a freshly cloned bot with no list at
+all. The whole list and booking side disappears and what is left is a
+forwarder: you define one or
 more source chats and one or more destination chats, and every message that
 shows up in a source is repeated in the destinations. **📋 Switch to scheduler
 mode** takes you back.
