@@ -115,6 +115,12 @@ che non puoi toccare, ✅ una opzionale attiva e ❌ una opzionale spenta. Premi
 | `/unsetstaff` | Toglie la chat staff | admin del bot | ovunque |
 | `/setsupport aiuto` | Crea un secondo nome per `/support`, per esempio `/aiuto` | admin del bot | ovunque |
 | `/unsetsupport` | Toglie il nome alternativo | admin del bot | ovunque |
+| `/setidcmd verifica` | Attiva `/id`, con cui un admin si dichiara admin ufficiale del bot, e gli dà un secondo nome, per esempio `/verifica` | admin del bot | ovunque |
+| `/unsetidcmd` | Disattiva `/id` | admin del bot | ovunque |
+| `/setbanfooter Per aiuto scrivi /support` | Aggiunge una riga in fondo al messaggio di ban, per esempio dove chiedere aiuto | admin del bot | ovunque |
+| `/unsetbanfooter` | Toglie la riga dal messaggio di ban | admin del bot | ovunque |
+| `/setidfooter <testo>` | Aggiunge una riga in fondo alle risposte di `/id` | admin del bot | ovunque |
+| `/unsetidfooter` | Toglie la riga dalle risposte di `/id` | admin del bot | ovunque |
 | `/addadmin 123456789` | Aggiunge un admin del bot | admin del bot | ovunque |
 | `/deladmin 123456789` | Toglie un admin del bot. Serve solo se non hai una chat staff | admin del bot | ovunque |
 | `/listadmins` | Elenca gli admin del bot | admin del bot | ovunque |
