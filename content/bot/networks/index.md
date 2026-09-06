@@ -193,6 +193,7 @@ Il menu di `/start` per i manager ha queste voci:
 | **⚙️ Impostazioni** | Template, bottoni, sottoliste, formato lista, tag di prenotazione |
 | **➕ Aggiungi Canale** e **➖ Rimuovi Canale** | Aggiungono o tolgono una chat inoltrando un suo messaggio |
 | **🗒 Elenca chat** | Le chat registrate sul bot |
+| **📡 Passa a modalità inoltro** | Cambia il bot in modalità inoltro, sempre disponibile anche senza liste o prenotazioni |
 | **➕ Aggiungi lista** e **➖ Rimuovi lista** | Gestiscono più liste in parallelo sullo stesso bot |
 | **🌐 Lingua** | Cambia lingua |
 | **📔 Guida** | Apre la guida del bot |
@@ -227,8 +228,10 @@ Senza che nessuno scriva niente, il bot:
 
 ## Modalità inoltro
 
-Con **📡 Passa a modalità inoltro** il bot cambia mestiere. Sparisce tutta la
-parte di liste e prenotazioni e resta un inoltratore: definisci una o più
+Con **📡 Passa a modalità inoltro**, nel menu principale di `/start`, il bot
+cambia mestiere. Il bottone c'è sempre, anche su un bot appena clonato senza
+nessuna lista. Sparisce tutta la parte di liste e prenotazioni e resta un
+inoltratore: definisci una o più
 chat sorgente e una o più chat destinazione, e ogni messaggio che compare
 nella sorgente viene ripetuto nelle destinazioni. Con **📋 Passa a modalità
 scheduler** torni indietro.
