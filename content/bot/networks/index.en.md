@@ -147,6 +147,7 @@ Both `#prenota` and `/prenota` work, but only inside that list's booking chat.
 | `/newlink <chat_id> <link>` | Forces a fixed link for a chat instead of the generated one | manager | private, staff chat |
 | `/dellink <chat_id>` | Back to the link the bot generates | manager | private, staff chat |
 | `/check [chat_id]` | Checks the bot permissions across the chats | manager | private, staff chat |
+| `/pending` | Lists the chats the bot was added to that nobody put in the list yet, with the buttons to add them | manager | private, staff chat |
 | `/escilo <chat_id>` | Makes the bot leave the listed chats | manager | anywhere |
 | `/generate` | Rebuilds the list text from the template | manager | private, staff chat |
 | `/staff` | Lists the current chat's administrators, split by role | manager | group |
@@ -231,23 +232,42 @@ more source chats and one or more destination chats, and every message that
 shows up in a source is repeated in the destinations. **📋 Switch to scheduler
 mode** takes you back.
 
+Destinations are not set up by hand: as soon as you add the bot to a channel
+or a group, that chat becomes a destination and starts receiving. With
+**Approval mode** on, the chat waits until a manager approves it, from the
+button that arrives in private or with `/approve`. The join notice also
+carries a **Forward source** button: tap it and that chat becomes a source
+and stops being a destination, because a chat that is source and destination
+at once would copy its own posts forever. A chat that already has a role is
+left as it is, even if you remove the bot and add it back.
+
 The menu for this mode is all toggles, which flip when you tap them:
 
 | Toggle | What it changes |
 |---|---|
 | **Forward new messages** | The master switch for forwarding |
-| **Copy messages** or **Forward messages** | With copy the origin is hidden, with forward it is visible |
+| **Copy messages** or **Forward messages** | With copy the origin is hidden, with forward it is visible. The bot forwards by default |
 | **Forward messages with inline buttons** | Passes or drops messages carrying buttons |
 | **Forward messages containing links** | Passes or drops messages containing links |
 | **Notify managers of chat moves** | Tells the managers about every add, removal or role change |
 | **Approval mode for new destinations** | A fresh destination only receives once a manager approves it |
 | **Replay last message when bot joins** | As soon as it joins a new chat, it posts the latest message there |
-| **Allow replies to forwarded posts** | Whoever replies to a post in a destination is put in touch with whoever wrote it |
+| **Allow replies to forwarded posts** | Whoever replies to a post in a destination writes to the managers, and the manager's answer goes back to the chat it came from |
 | **Repost latest message** or **Repost random message** | What the repeat timer publishes |
 
 The other entries are **➕ Add channel**, **➖ Remove channel**, **🗒 List
-chats**, **⏰ Repeat** (how many seconds between reposts, zero to turn it off)
-and **⟳ Refresh message cache**.
+chats** and **⏰ Repeat**.
+
+Inside **⏰ Repeat** you write how many **hours** the bot should wait between
+reposts, zero to turn it off. Decimals with a dot work: `2.5` means every two
+hours and a half. The **Repost latest message** / **Repost random message**
+button and **⟳ Refresh message cache** live there too. With **Repost random
+message** the bot draws without replacement: every post it has in memory airs
+once, then the pool starts over.
+
+In **🗒 List chats** every row carries a ✏️ pencil. Tapping it opens that
+chat's menu, with **➕ Approve chat** while it is still waiting and **➖ Remove
+the bot** to make it leave.
 
 | Command | What it does | Who | Where |
 |---|---|---|---|
@@ -261,7 +281,12 @@ and **⟳ Refresh message cache**.
 | `/disabletopic <chat_id> <topic_id>` | Turns that topic off | manager | anywhere |
 | `/enablesourcetopic <chat_id> <topic_id>` | Turns a topic into a source | manager | anywhere |
 | `/disablesourcetopic <chat_id> <topic_id>` | Turns that source topic off | manager | anywhere |
-| `/forward` | Replying to a message in the source, sends it to every destination right away | manager | source chat |
+| `/forward` | Replying to a message in the source, sends it to every destination right away | manager, or anyone who can post in the source channel | source chat |
+| `/escilo <chat_id> [message]` | Makes the bot leave the chat. Add text and the bot posts it before leaving | manager | anywhere |
+| `/addadmin <userid or @username>` | Adds an administrator. Works as a reply to a message the bot relayed too | superuser | anywhere |
+| `/deladmin <userid or @username>` | Removes an administrator, same rules as `/addadmin` | superuser | anywhere |
+| `/listadmins` | Lists the administrators | superuser | anywhere |
+| `/help` | Shows managers the command list, and everyone else the bot's welcome message | everyone | anywhere |
 
 ## Frequently asked questions
 

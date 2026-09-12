@@ -149,6 +149,7 @@ di quella lista.
 | `/newlink <chat_id> <link>` | Impone un link fisso per una chat, invece di quello generato | manager | privato, chat staff |
 | `/dellink <chat_id>` | Torna al link generato dal bot | manager | privato, chat staff |
 | `/check [chat_id]` | Verifica i permessi del bot nelle chat | manager | privato, chat staff |
+| `/pending` | Elenca le chat dove il bot è stato aggiunto ma che nessuno ha ancora messo in lista, con i bottoni per aggiungerle | manager | privato, chat staff |
 | `/escilo <chat_id>` | Fa uscire il bot dalle chat indicate | manager | ovunque |
 | `/generate` | Rigenera il testo della lista dal template | manager | privato, chat staff |
 | `/staff` | Elenca gli amministratori della chat, divisi per ruolo | manager | gruppo |
@@ -236,24 +237,44 @@ chat sorgente e una o più chat destinazione, e ogni messaggio che compare
 nella sorgente viene ripetuto nelle destinazioni. Con **📋 Passa a modalità
 scheduler** torni indietro.
 
+Le destinazioni non si configurano a mano: appena aggiungi il bot a un
+canale o a un gruppo, quella chat diventa una destinazione e comincia a
+ricevere. Se hai acceso **Modalità approvazione**, la chat resta in attesa
+finché un manager non la approva dal bottone che arriva in privato oppure
+con `/approve`. Nell'avviso di ingresso trovi anche **Sorgente inoltro**: se
+lo tocchi quella chat diventa una sorgente e smette di essere una
+destinazione, perché una chat che è sorgente e destinazione insieme
+ricopierebbe i propri post all'infinito. Una chat che ha già un ruolo resta
+com'è anche se togli e rimetti il bot.
+
 Il menu di questa modalità è tutto a interruttori, che si accendono e
 spengono toccandoli:
 
 | Interruttore | Cosa cambia |
 |---|---|
 | **Inoltrare i nuovi messaggi** | Interruttore generale dell'inoltro |
-| **Copiare i messaggi** oppure **Inoltrare i messaggi** | Con la copia non si vede da dove arriva il messaggio, con l'inoltro sì |
+| **Copiare i messaggi** oppure **Inoltrare i messaggi** | Con la copia non si vede da dove arriva il messaggio, con l'inoltro sì. Di default il bot inoltra |
 | **Inoltrare i messaggi con bottoni** | Passa o scarta i messaggi che hanno bottoni |
 | **Inoltrare i messaggi con link** | Passa o scarta i messaggi che contengono link |
 | **Avvisare i manager quando il bot cambia chat** | Notifica ai manager ogni aggiunta, rimozione o cambio di ruolo |
 | **Modalità approvazione** | Una nuova destinazione riceve solo dopo che un manager l'ha approvata |
 | **Inoltrare l'ultimo messaggio quando il bot viene aggiunto** | Appena entra in una chat nuova, ci rimanda l'ultimo post |
-| **Permettere agli utenti di rispondere ai post inoltrati** | Chi risponde a un post in destinazione viene messo in contatto con chi l'ha scritto |
+| **Permettere agli utenti di rispondere ai post inoltrati** | Chi risponde a un post in destinazione scrive ai manager, e la risposta del manager torna nella chat di partenza |
 | **Ultimo post** oppure **Post casuale** | Cosa ripubblica il timer di ripetizione |
 
 Le altre voci sono **➕ Aggiungi Canale**, **➖ Rimuovi Canale**, **🗒 Elenca
-chat**, **⏰ Ripetizione** (ogni quanti secondi ripetere, zero per spegnere) e
-**⟳ Aggiorna lista messaggi**.
+chat** e **⏰ Ripetizione**.
+
+Dentro **⏰ Ripetizione** scrivi ogni quante **ore** il bot deve ripubblicare,
+zero per spegnere. Vanno bene i decimali con il punto: `2.5` vuol dire ogni due
+ore e mezza. Lì trovi anche il bottone **Ultimo post** / **Post casuale** e
+**⟳ Aggiorna lista messaggi**. Con **Post casuale** il bot pesca senza
+rimettere dentro: pubblica tutti i post che ha in memoria una volta ciascuno,
+poi ricomincia.
+
+In **🗒 Elenca chat** ogni riga ha una matita ✏️. Toccandola si apre il menu di
+quella chat, con **➕ Approva Chat** se è ancora in attesa e **➖ Esci il bot**
+per farlo uscire.
 
 | Comando | Cosa fa | Chi | Dove |
 |---|---|---|---|
@@ -267,7 +288,12 @@ chat**, **⏰ Ripetizione** (ogni quanti secondi ripetere, zero per spegnere) e
 | `/disabletopic <chat_id> <topic_id>` | Disattiva quel topic | manager | ovunque |
 | `/enablesourcetopic <chat_id> <topic_id>` | Attiva un topic come sorgente | manager | ovunque |
 | `/disablesourcetopic <chat_id> <topic_id>` | Disattiva quel topic sorgente | manager | ovunque |
-| `/forward` | In risposta a un messaggio nella sorgente, lo manda subito in tutte le destinazioni | manager | chat sorgente |
+| `/forward` | In risposta a un messaggio nella sorgente, lo manda subito in tutte le destinazioni | manager, oppure chiunque possa postare nel canale sorgente | chat sorgente |
+| `/escilo <chat_id> [messaggio]` | Fa uscire il bot dalla chat. Se aggiungi del testo, il bot lo scrive prima di uscire | manager | ovunque |
+| `/addadmin <userid o @username>` | Aggiunge un amministratore. Funziona anche in risposta a un messaggio inoltrato dal bot | superuser | ovunque |
+| `/deladmin <userid o @username>` | Toglie un amministratore, stesse regole di `/addadmin` | superuser | ovunque |
+| `/listadmins` | Elenca gli amministratori | superuser | ovunque |
+| `/help` | Ai manager mostra l'elenco dei comandi, agli altri il messaggio di benvenuto del bot | tutti | ovunque |
 
 ## Domande frequenti
 
