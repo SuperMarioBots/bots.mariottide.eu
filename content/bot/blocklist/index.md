@@ -135,6 +135,7 @@ che non puoi toccare, ✅ una opzionale attiva e ❌ una opzionale spenta. Premi
 |---|---|---|---|
 | `/listabl` | Elenca chi è in blocklist, a pagine | admin del bot | chat staff o chat privata |
 | `/listaxlsx` | Manda la stessa lista come file Excel | admin del bot | chat staff o chat privata |
+| `/importabl @vecchiobot` | Copia in questo bot la blocklist di un altro bot blocklist, anche se quel bot è stato cancellato. Senza argomenti mostra da quali bot puoi importare. I ban già presenti restano come sono | admin di entrambi i bot | chat staff o chat privata |
 | `/contabl` | Conta le persone in blocklist, divise per categoria | admin del bot | chat staff o chat privata |
 | `/listchats` | Elenca i gruppi dove sta il bot | admin del bot | chat staff o chat privata |
 | `/contachat` | Conta gruppi e canali dove sta il bot | admin del bot | chat staff o chat privata |
