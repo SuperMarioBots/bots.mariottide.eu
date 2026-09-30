@@ -293,7 +293,7 @@ per farlo uscire.
 | `/addadmin <userid o @username>` | Aggiunge un amministratore. Funziona anche in risposta a un messaggio inoltrato dal bot | superuser | ovunque |
 | `/deladmin <userid o @username>` | Toglie un amministratore, stesse regole di `/addadmin` | superuser | ovunque |
 | `/listadmins` | Elenca gli amministratori | superuser | ovunque |
-| `/help` | Ai manager mostra l'elenco dei comandi, agli altri il messaggio di benvenuto del bot | tutti | ovunque |
+| `/help` | Breve descrizione del bot e link a questa guida | tutti | privato |
 
 ## Domande frequenti
 
