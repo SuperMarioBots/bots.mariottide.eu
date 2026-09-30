@@ -286,7 +286,7 @@ the bot** to make it leave.
 | `/addadmin <userid or @username>` | Adds an administrator. Works as a reply to a message the bot relayed too | superuser | anywhere |
 | `/deladmin <userid or @username>` | Removes an administrator, same rules as `/addadmin` | superuser | anywhere |
 | `/listadmins` | Lists the administrators | superuser | anywhere |
-| `/help` | Short description of the bot and a link to this guide | everyone | private |
+| `/help` | Short description of the bot and a link to this guide. In forwarding mode: the command list for managers, the welcome message for everyone else, always with the link | everyone | private (anywhere in forwarding mode) |
 
 ## Frequently asked questions
 
