@@ -50,6 +50,7 @@ media successivi, finché non li cambi.
 | Comando | Cosa fa | Chi | Dove |
 |---|---|---|---|
 | `/start` | Messaggio di benvenuto con i due bottoni di configurazione | tutti | Privato |
+| `/help` | Breve descrizione del bot e link a questa guida | tutti | Privato |
 | `/firma Mario` | Imposta la firma in un colpo solo, senza passare dai bottoni | tutti | Privato |
 | `/signature Mario` | Uguale a `/firma` | tutti | Privato |
 | `/clone` | Spiega come creare la tua copia del bot: crei il bot su @BotFather e gli inoltri il messaggio con il token | tutti | Privato |
