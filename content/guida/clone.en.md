@@ -36,6 +36,12 @@ Use this when the button is offered. It needs a recent Telegram version.
    No @BotFather needed.
 5. Open your new bot and send it `/start`.
 
+You can also start from AnonyMedia, Blocklist, Cazzinator, Networks and
+Tagga, clones included: send `/clone` and press **Create clone (easy)**
+under the instructions. The Vetrina opens straight at step 3. If you start
+from a Cazzinator or Tagga clone, the new clone inherits the features turned
+on in that bot.
+
 ## Manual way: @BotFather
 
 Works on any Telegram version.
