@@ -80,7 +80,6 @@ registrazione.
 
 ## Quali bot si possono clonare
 
-Si clonano AnonyMedia, Blocklist, Cazzinator, Master Control Program,
-Networks, Tagga e Watermark. CAM Manager e Ubot Manager no: sono istanze
-uniche, si usano direttamente. Better Limitati si clona su richiesta,
-scrivimi.
+Si clonano AnonyMedia, Better Limitati, Blocklist, Cazzinator, Master Control
+Program, Networks, Tagga e Watermark. CAM Manager e Ubot Manager no: sono
+istanze uniche, si usano direttamente.

@@ -6,7 +6,7 @@ weight = 50
 [extra]
 emoji = "⚔️"
 repo = "BetterLimitatiBots"
-clonable = false
+clonable = true
 +++
 
 ## Cosa fa
@@ -29,9 +29,8 @@ dell'utente arriva sul gruppo staff, senza scambio di contatti) e il contatto pe
 chi è limitato da Telegram e non può scrivere in privato a chi non lo ha in
 rubrica: al bot può scrivere lo stesso.
 
-Questo bot non ha il pulsante di clonazione automatica: si ottiene su richiesta.
-Se ti serve, scrivimi da [Supporto e contatti](@/guida/supporto.md) e ti preparo
-la tua istanza, con i tuoi gruppi e i tuoi operatori.
+Il bot si usa clonato: lo sportello, gli operatori e i messaggi sono tuoi e non
+li condividi con nessuno.
 
 ## Prima di iniziare
 
@@ -49,8 +48,8 @@ gruppo più topic. Se sbagli topic, i messaggi arrivano nel posto sbagliato.
 
 ## Configurazione
 
-1. Chiedimi il bot da [Supporto e contatti](@/guida/supporto.md). Te lo consegno
-   già attivo, con te come primo amministratore.
+1. Crea il tuo clone seguendo [Creare il tuo clone](@/guida/clone.md), poi
+   aprilo e mandagli `/start`. Chi crea il clone ne è il primo amministratore.
 2. Aggiungi il bot al gruppo dello staff.
 3. Scrivi `/addchat` nel gruppo, o dentro il topic che vuoi usare. Da quel
    momento i messaggi degli utenti arrivano lì.
@@ -174,5 +173,4 @@ amministratore, ma smetti di ricevere le copie.
 
 ### Come lo ottengo?
 
-Su richiesta, non c'è un pulsante di clonazione automatica. Scrivimi da
-[Supporto e contatti](@/guida/supporto.md).
+Clonandolo: segui [Creare il tuo clone](@/guida/clone.md).

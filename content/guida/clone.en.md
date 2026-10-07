@@ -77,6 +77,6 @@ quiet, check you did not revoke the token on @BotFather afterwards.
 
 ## Which bots can be cloned
 
-AnonyMedia, Blocklist, Cazzinator, Master Control Program, Networks, Tagga and
-Watermark can. CAM Manager and Ubot Manager cannot: they are single instances
-you use directly. Better Limitati is cloned on request, write to me.
+AnonyMedia, Better Limitati, Blocklist, Cazzinator, Master Control Program,
+Networks, Tagga and Watermark can. CAM Manager and Ubot Manager cannot: they
+are single instances you use directly.
