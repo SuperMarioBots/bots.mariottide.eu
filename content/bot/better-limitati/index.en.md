@@ -6,7 +6,7 @@ weight = 50
 [extra]
 emoji = "⚔️"
 repo = "BetterLimitatiBots"
-clonable = false
+clonable = true
 +++
 
 ## What it does
@@ -28,9 +28,8 @@ lands in the staff group, with no contact exchanged) and a way in for people
 Telegram has limited, who cannot write privately to anyone who has not saved
 their number. They can still write to the bot.
 
-This bot has no automatic clone button: you get it on request. If you need one,
-write to me from [Support and contacts](@/guida/supporto.md) and I will set up
-your own instance, with your groups and your operators.
+The bot is used as a clone: the desk, the operators and the messages are
+yours and you share them with nobody.
 
 ## Before you start
 
@@ -49,8 +48,9 @@ the wrong place.
 
 ## Setup
 
-1. Ask me for the bot from [Support and contacts](@/guida/supporto.md). It comes
-   ready, with you as its first administrator.
+1. Create your clone following [Create your own clone](@/guida/clone.md), then
+   open it and send `/start`. Whoever creates the clone is its first
+   administrator.
 2. Add the bot to your staff group.
 3. Send `/addchat` in the group, or inside the topic you want to use. From then
    on user messages arrive there.
@@ -171,5 +171,4 @@ administrator, but stop receiving copies.
 
 ### How do I get it?
 
-On request, there is no automatic clone button. Write to me from
-[Support and contacts](@/guida/supporto.md).
+By cloning it: follow [Create your own clone](@/guida/clone.md).
