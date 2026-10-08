@@ -4,6 +4,14 @@ description = "Where to write, how to report a problem, how to support the proje
 weight = 4
 +++
 
+## Asking a question
+
+Send your question in private to
+[@VetrinaSuperMarioBot](https://t.me/VetrinaSuperMarioBot), in your own words.
+It answers automatically from these guides and points you to the page to
+read. It only answers about these bots, not other requests. It can be
+wrong: if the answer does not convince you, write to me.
+
 ## Writing to me
 
 - [@mario_ttide](https://t.me/mario_ttide) for anything.

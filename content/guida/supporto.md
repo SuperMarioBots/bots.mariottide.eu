@@ -4,6 +4,14 @@ description = "Dove scrivere, come segnalare un problema, come supportare il pro
 weight = 4
 +++
 
+## Fare una domanda
+
+Scrivi la tua domanda in privato a
+[@VetrinaSuperMarioBot](https://t.me/VetrinaSuperMarioBot), con parole tue.
+Ti risponde in automatico usando queste guide e ti indica la pagina da
+leggere. Risponde solo su questi bot e non ad altre richieste. Può
+sbagliare: se la risposta non ti convince, scrivimi.
+
 ## Scrivermi
 
 - [@mario_ttide](https://t.me/mario_ttide) per qualsiasi cosa.
