@@ -25,6 +25,12 @@ Non esiste un Blocklist pubblico da usare così com'è: il bot si usa clonato,
 perché la lista nera, le categorie, i gruppi e lo staff sono tuoi e non li
 condividi con nessuno.
 
+Il bot parla italiano e inglese. Segue la lingua della tua app Telegram
+(italiano per qualsiasi lingua diversa da queste due); la cambi quando vuoi
+con `/language`. I messaggi che il bot manda senza che nessuno li chieda, come
+gli avvisi di ban nei gruppi e quelli giornalieri sui permessi, usano la
+lingua del proprietario del clone.
+
 ## Prima di iniziare
 
 Serve tutto questo:
@@ -49,7 +55,7 @@ I dettagli su come si promuove un bot stanno in
 2. Crea il gruppo dello staff, aggiungi il bot e promuovilo amministratore con
    il permesso di bannare.
 3. Dal gruppo dello staff manda `/setstaff`. Il bot risponde
-   "Staff group set successfully". Da quel momento gli amministratori di quel
+   "Gruppo staff impostato correttamente." Da quel momento gli amministratori di quel
    gruppo sono gli admin del bot: chi promuovi lì comanda il bot, chi togli
    perde i comandi.
 4. Se il gruppo dello staff è un forum, manda `/setstaff` dentro il topic che
@@ -71,6 +77,7 @@ I dettagli su come si promuove un bot stanno in
 | `/status` | Dice a te se sei in blocklist e perché | tutti | chat privata |
 | `/report` | In risposta a un messaggio, lo manda allo staff con i dati di chi lo ha scritto | tutti | nei gruppi |
 | `/support` | Chiama lo staff. In risposta a un messaggio si comporta come `/report` | tutti | nei gruppi |
+| `/language` | Cambia la lingua del bot tra italiano e inglese | tutti | chat privata |
 | `/clone` | Spiega come creare la tua copia del bot | tutti | chat privata |
 
 ### Gestione della blocklist

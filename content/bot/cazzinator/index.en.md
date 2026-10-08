@@ -28,7 +28,7 @@ text over it, in the style of a motivational quote.
 - Use it in **groups and supergroups**.
 - The bot must be an **admin** with the **Delete messages** permission.
   Without it the bot ignores the delete commands entirely: no reply, no
-  complaint. See [Telegram permissions](@/guida/permessi.md).
+  complaint. See [Telegram permissions](@/guida/permessi.en.md).
 - Telegram only lets a bot delete other people's messages within **48 hours**,
   which is why delays above 24 hours make no sense and the bot caps them at 24
 hours.

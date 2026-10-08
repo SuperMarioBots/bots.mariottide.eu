@@ -35,7 +35,7 @@ administrator, with two exact Telegram permissions:
 
 If it loses either one, the channel pauses itself and stops issuing invites
 and removing expired members until you give the permission back. See
-[Telegram permissions](@/guida/permessi.md).
+[Telegram permissions](@/guida/permessi.en.md).
 
 You have to be an administrator of the channel too: the bot only lists
 channels where you show up as an admin.

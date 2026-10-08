@@ -48,7 +48,7 @@ the wrong place.
 
 ## Setup
 
-1. Create your clone following [Create your own clone](@/guida/clone.md), then
+1. Create your clone following [Create your own clone](@/guida/clone.en.md), then
    open it and send `/start`. Whoever creates the clone is its first
    administrator.
 2. Add the bot to your staff group.
@@ -171,4 +171,4 @@ administrator, but stop receiving copies.
 
 ### How do I get it?
 
-By cloning it: follow [Create your own clone](@/guida/clone.md).
+By cloning it: follow [Create your own clone](@/guida/clone.en.md).

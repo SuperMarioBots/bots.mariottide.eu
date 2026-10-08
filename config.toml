@@ -21,6 +21,10 @@ foot_note = "Tutti i bot sono gratuiti. Nessuno è autorizzato a venderli."
 public_bot = "Il bot pubblico"
 public_bot_note = "Puoi usarlo così com'è, senza clonare niente. Un clone tuo però è più veloce, perché non divide i limiti di Telegram con le altre chat."
 clone_only = "Questo bot non ha una versione pubblica: dipende dai dati che ci metti dentro, quindi si usa solo creando un clone tuo."
+nf_title = "Pagina non trovata"
+nf_ask = "Questa pagina?"
+nf_answer = "Non esiste, o non esiste più."
+nf_lede = "Riparti dall'elenco dei bot."
 
 [languages.en]
 title = "Mario's bots"
@@ -42,6 +46,10 @@ foot_note = "Every bot is free. Nobody is authorised to sell them."
 public_bot = "The public bot"
 public_bot_note = "You can use it as it is, no cloning needed. Your own clone is faster though, because it does not share Telegram's rate limits with every other chat."
 clone_only = "This bot has no public version: it lives off the data you put in it, so you use it by creating your own clone."
+nf_title = "Page not found"
+nf_ask = "This page?"
+nf_answer = "It does not exist, or no longer does."
+nf_lede = "Start again from the list of bots."
 
 [extra]
 telegram_channel = "https://t.me/SuperMarioBots"
