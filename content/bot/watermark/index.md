@@ -24,6 +24,9 @@ grande finché non ti piace.
 Il bot non passa dalle API standard dei bot, quindi accetta anche file ben
 oltre i 50 MB: i video lunghi vanno bene, ci mette solo più tempo.
 
+Il bot parla italiano e inglese. La prima volta che gli scrivi sceglie la
+lingua della tua app Telegram; la cambi quando vuoi con `/language`.
+
 ## Prima di iniziare
 
 - Si usa **solo in chat privata**: nei gruppi risponde soltanto a `/ping`, quindi non aggiungerlo.
@@ -53,6 +56,7 @@ media successivi, finché non li cambi.
 | `/help` | Breve descrizione del bot e link a questa guida | tutti | Privato |
 | `/firma Mario` | Imposta la firma in un colpo solo, senza passare dai bottoni | tutti | Privato |
 | `/signature Mario` | Uguale a `/firma` | tutti | Privato |
+| `/language` | Cambia la lingua del bot tra italiano e inglese | tutti | Privato |
 | `/clone` | Spiega come creare la tua copia del bot: crei il bot su @BotFather e gli inoltri il messaggio con il token | tutti | Privato |
 | `/ping` | Risponde `PONG`, serve solo a capire se il bot è vivo | tutti | ovunque |
 
@@ -66,6 +70,8 @@ diventa la tua firma, testo compreso di spazi ed emoji.
 
 **🔠 Imposta il carattere** mostra gli otto caratteri disponibili. Ne scegli
 uno e vale da subito per i media successivi.
+
+**🌐 Lingua** apre la scelta della lingua, come `/language`.
 
 Sotto ogni media firmato ci sono quattro bottoni, e ognuno rifà il render
 partendo dal media originale:

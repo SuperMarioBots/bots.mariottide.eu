@@ -28,6 +28,12 @@ Tutte le impostazioni si gestiscono con `/msettings`, un pannello a bottoni che
 mostra come è configurato il gruppo in quel momento. I comandi scritti restano
 validi e fanno esattamente le stesse cose: usa quello che ti è più comodo.
 
+Il bot parla italiano e inglese. Segue la lingua della tua app Telegram
+(italiano per qualsiasi lingua diversa da queste due); la cambi quando vuoi
+con `/language` o con il bottone **🌐 Lingua** del pannello. I messaggi che il
+bot scrive da solo nel gruppo usano la lingua della persona a cui si
+riferiscono.
+
 ## Prima di iniziare
 
 Il bot si usa nei gruppi (funziona anche nei supergruppi con i topic). In privato
@@ -70,6 +76,7 @@ Dettagli in [Permessi Telegram](@/guida/permessi.md).
 |---|---|---|---|
 | `/start` | Messaggio di benvenuto | tutti | privato |
 | `/help` | Rimanda alla guida e suggerisce di clonare | tutti | privato e gruppo |
+| `/language` | Cambia la lingua del bot tra italiano e inglese | tutti | privato e gruppo |
 | `/clone` | Istruzioni per creare il tuo clone | tutti | privato e gruppo |
 | `/ping` | Risponde PONG, serve a vedere se il bot è vivo | tutti | privato e gruppo |
 | `/info` | ID, lingua e datacenter di una persona (in risposta, con `@username` o con l'ID) | tutti | privato e gruppo |
@@ -170,7 +177,7 @@ media con `/sera`. Per cambiare il tempo solo per quel media si scrive
 
 Una regola dice al bot che aspetto ha un profilo da bannare. Si aggiungono con
 `/specialban <tipo> <valore>`, oppure dal pannello, che per le stesse cose fa le
-domande in italiano. Le regole valgono solo nel gruppo dove le scrivi.
+domande. Le regole valgono solo nel gruppo dove le scrivi.
 
 | Tipo | Cosa banna | Esempio |
 |---|---|---|

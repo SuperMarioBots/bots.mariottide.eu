@@ -18,8 +18,4 @@ Most of these bots can be **cloned**: you get an independent copy with its own
 username, your data and your groups. Where Telegram allows it, two taps are
 enough and it creates the new bot for you; otherwise you go through
 @BotFather. Both ways work for every clonable bot and are explained once in
-the [cloning guide](@/guida/clone.md).
-
-Some bots and guides are documented in Italian only, and are listed on the
-[Italian home](@/_index.md). The bots themselves answer in English when your
-Telegram app is set to English.
+the [cloning guide](@/guida/clone.en.md).

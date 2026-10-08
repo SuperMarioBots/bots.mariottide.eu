@@ -57,7 +57,7 @@ it needs:
 
 When you promote it or change its permissions, the bot sends the managers a
 summary and tells you whether the permissions are enough or which ones are
-missing. See also [Telegram permissions](@/guida/permessi.md).
+missing. See also [Telegram permissions](@/guida/permessi.en.md).
 
 ## Setup
 
@@ -80,7 +80,7 @@ approval": whoever arrives through the link has to be accepted by hand.
 ### If you run a list of your own
 
 1. Ask for your clone, which starts with you as superuser. See
-   [Create your own clone](@/guida/clone.md).
+   [Create your own clone](@/guida/clone.en.md).
 2. Create the booking chat (a group where people will type `#prenota`), put
    the bot in it and run `/setreschat` right there.
 3. If you want a staff chat, where the messages people write to the bot in

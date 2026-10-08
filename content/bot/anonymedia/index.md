@@ -25,6 +25,10 @@ Ogni media pubblicato porta sotto il pulsante
 **😏 Invia media in forma anonima 😏**, così chi lo vede nel gruppo può fare
 la stessa cosa con un tocco.
 
+Il bot parla italiano e inglese. Segue la lingua della tua app Telegram
+(italiano per qualsiasi lingua diversa da queste due); la cambi quando vuoi
+con `/language`.
+
 ## Prima di iniziare
 
 Per usarlo da utente serve poco: essere iscritto a un gruppo dove c'è già il
@@ -73,6 +77,7 @@ precedente.
 | `/start` | Mostra i gruppi in cui puoi pubblicare e apre l'invio | tutti | chat privata |
 | `/help` | Spiega come si usa | tutti | ovunque |
 | `/delete` | In risposta a un media pubblicato, lo cancella. Funziona solo se quel media lo hai mandato tu | chi ha inviato quel media | nel gruppo |
+| `/language` | Cambia la lingua del bot tra italiano e inglese | tutti | ovunque |
 | `/clone` | Spiega come creare la tua copia del bot | tutti | chat privata |
 | `/ping` | Risponde `PONG`, serve solo a capire se il bot è vivo | tutti | ovunque |
 
@@ -105,6 +110,9 @@ Quando arriva un media da moderare, lo staff lo riceve con cinque pulsanti:
 
 Il messaggio nella chat staff, una volta gestito, perde i pulsanti e riporta
 chi ha deciso cosa.
+
+La scheda da moderare e i pulsanti sotto il media pubblicato usano la lingua
+di chi ha mandato il media.
 
 Se scrivi `#dick` (o `/dick`) nella didascalia, il media si cancella da solo dopo due ore
 anche quando viene approvato normalmente.

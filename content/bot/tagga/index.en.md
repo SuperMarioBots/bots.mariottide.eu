@@ -36,7 +36,7 @@ copies its text, and which word triggers the tag instead of `all`.
 - If the group **hides its member list**, promote the bot to **admin**, or
   Telegram will only show it the admins and the tag will mention just them.
   It needs no permissions: promote it and leave every box unticked. See
-  [Telegram permissions](@/guida/permessi.md).
+  [Telegram permissions](@/guida/permessi.en.md).
 - It works in forum groups too: every topic has its own running tag,
   independent from the others.
 - The bot never mentions other bots or deleted accounts.
