@@ -101,7 +101,10 @@ mano.
    `/chiuse`.
 8. Per pubblicare, dal menu usa **📨 Programma Post**: inoltri il messaggio da
    pubblicare e il bot ti guida a scegliere quando, ogni quanto, dove, se
-   fissarlo e se aprire o chiudere le prenotazioni insieme al post.
+   fissarlo e se aprire o chiudere le prenotazioni insieme al post. Se la
+   lista non ha ancora nessuna chat in lista, la conferma te lo segnala: il
+   post resta programmato ma non parte finché non premi **Metti in lista**
+   su almeno una chat.
 
 Le liste possono essere più di una: dal menu principale con **➕ Aggiungi
 lista** ne crei un'altra, ognuna con la sua chat prenotazioni, il suo tag e
