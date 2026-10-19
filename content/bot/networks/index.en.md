@@ -98,7 +98,10 @@ approval": whoever arrives through the link has to be accepted by hand.
    round, `/chiuse`.
 8. To publish, use **📨 Schedule Post** from the menu: you forward the message
    to publish and the bot walks you through when, how often, where, whether to
-   pin it and whether to open or close the bookings along with the post.
+   pin it and whether to open or close the bookings along with the post. If
+   the list has no chats in it yet, the confirmation says so: the post stays
+   scheduled but goes nowhere until you tap **Add to list** on at least one
+   chat.
 
 You can run more than one list: **➕ Add list** in the main menu creates
 another one, each with its own booking chat, its own tag and its own settings.
