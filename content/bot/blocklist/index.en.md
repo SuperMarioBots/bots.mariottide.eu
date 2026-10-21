@@ -128,6 +128,7 @@ touch, ✅ an active optional one and ❌ an optional one turned off. Tap
 | `/addadmin 123456789` | Adds a bot admin | bot admin | anywhere |
 | `/deladmin 123456789` | Removes a bot admin. Only needed if you have no staff chat | bot admin | anywhere |
 | `/listadmins` | Lists the bot admins | bot admin | anywhere |
+| `/reloadadmins` | Reloads the bot admin list right away, including the current admins of the staff chat. Use it after promoting or demoting someone in the staff chat | bot admin | anywhere |
 | `/addbakchat -1001234567890 12345` | Registers a chat where proofs are archived. With no arguments it uses the current chat | bot admin | anywhere |
 | `/delbakchat -1001234567890` | Removes an archive chat. With no arguments it removes the current one | bot admin | anywhere |
 | `/listbakchats` | Lists the archive chats | bot admin | anywhere |
