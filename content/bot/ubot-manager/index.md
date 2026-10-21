@@ -150,6 +150,14 @@ Quando scegli un canale del genere il bot te lo segnala e ti chiede conferma.
 Se il canale è davvero tuo, per esempio creato con un tuo altro account,
 conferma pure.
 
+### Alcuni gruppi della cartella non ricevono il messaggio a ogni giro
+
+Ogni giro ha un tempo massimo di circa 10 minuti. In una cartella con
+moltissimi gruppi il bot può non arrivare a tutti: si ferma, segna i gruppi
+mancanti come "non inviato: tempo massimo del giro raggiunto" e riparte al
+giro successivo, sempre all'intervallo che hai scelto. L'ordine dei gruppi
+cambia a ogni giro. Se succede spesso, dividi i gruppi in più cartelle.
+
 ### Posso gestire più cartelle insieme?
 
 Sì. Ogni cartella ha canale sorgente, timer e impostazioni indipendenti.

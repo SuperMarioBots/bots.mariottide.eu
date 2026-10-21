@@ -143,6 +143,14 @@ messages to those groups with no control over what goes out. Picking such a
 channel shows a warning and asks for a confirmation. If the channel really is
 yours, one you created with another account for instance, confirm it.
 
+### Some groups in the folder do not get the message every run
+
+Each run has a time limit of about 10 minutes. In a folder with a great many
+groups the bot may not reach all of them: it stops, marks the missing groups
+as "not sent: run time limit reached" and carries on at the next run, still
+at the interval you chose. The order of the groups changes on every run. If
+it happens often, split the groups across more folders.
+
 ### Can I run more than one folder?
 
 Yes. Each folder has its own source channel, timer and settings. Add as many
