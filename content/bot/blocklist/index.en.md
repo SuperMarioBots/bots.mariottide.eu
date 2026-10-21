@@ -131,6 +131,7 @@ touch, ✅ an active optional one and ❌ an optional one turned off. Tap
 | `/addbakchat -1001234567890 12345` | Registers a chat where proofs are archived. With no arguments it uses the current chat | bot admin | anywhere |
 | `/delbakchat -1001234567890` | Removes an archive chat. With no arguments it removes the current one | bot admin | anywhere |
 | `/listbakchats` | Lists the archive chats | bot admin | anywhere |
+| `/importproofs -1001234567890` | Copies into an archive chat the ban proofs it does not hold yet, each proof once. With no arguments it uses the current group. While an import is running on the same chat the command is refused. When done it posts in the chat and sends you a private report with the proofs copied and those that could not be copied because no source chat is available anymore | bot admin | anywhere |
 | `/refresh` | Checks again the groups where the bot was not an admin and updates the situation | bot admin | private chat |
 
 ### Lists and statistics
