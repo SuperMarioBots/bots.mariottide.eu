@@ -131,6 +131,7 @@ che non puoi toccare, ✅ una opzionale attiva e ❌ una opzionale spenta. Premi
 | `/addadmin 123456789` | Aggiunge un admin del bot | admin del bot | ovunque |
 | `/deladmin 123456789` | Toglie un admin del bot. Serve solo se non hai una chat staff | admin del bot | ovunque |
 | `/listadmins` | Elenca gli admin del bot | admin del bot | ovunque |
+| `/reloadadmins` | Ricarica subito la lista degli admin del bot, inclusi gli amministratori attuali della chat staff. Usalo dopo aver promosso o rimosso qualcuno nella chat staff | admin del bot | ovunque |
 | `/addbakchat -1001234567890 12345` | Registra una chat dove archiviare le prove. Senza argomenti usa la chat corrente | admin del bot | ovunque |
 | `/delbakchat -1001234567890` | Toglie una chat di archivio. Senza argomenti toglie quella corrente | admin del bot | ovunque |
 | `/listbakchats` | Elenca le chat di archivio | admin del bot | ovunque |
