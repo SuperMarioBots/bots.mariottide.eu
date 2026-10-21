@@ -135,7 +135,7 @@ che non puoi toccare, ✅ una opzionale attiva e ❌ una opzionale spenta. Premi
 | `/addbakchat -1001234567890 12345` | Registra una chat dove archiviare le prove. Senza argomenti usa la chat corrente | admin del bot | ovunque |
 | `/delbakchat -1001234567890` | Toglie una chat di archivio. Senza argomenti toglie quella corrente | admin del bot | ovunque |
 | `/listbakchats` | Elenca le chat di archivio | admin del bot | ovunque |
-| `/importproofs -1001234567890` | Copia in una chat di archivio le prove dei ban che ancora non contiene, una volta sola per prova. Senza argomenti usa il gruppo corrente. Mentre un'importazione è in corso sulla stessa chat il comando viene rifiutato. Alla fine scrive nella chat e manda in privato un resoconto con le prove copiate e quelle non copiabili perché nessuna chat di origine è più disponibile | admin del bot | ovunque |
+| `/importproofs -1001234567890` | Copia in una chat di archivio le prove dei ban che ancora non contiene, una volta sola per prova. Senza argomenti usa il gruppo corrente. Mentre un'importazione è in corso sulla stessa chat il comando viene rifiutato. Alla fine scrive nella chat e manda in privato un resoconto con le prove copiate e quelle non copiabili perché nessuna chat di origine è più disponibile. Se si ferma prima (bot rimosso dalla chat o senza permesso di scrivere, chat non più di archivio, errore) manda in privato il motivo e il resoconto parziale | admin del bot | ovunque |
 | `/refresh` | Ricontrolla i gruppi dove il bot non risultava amministratore e aggiorna la situazione | admin del bot | chat privata |
 
 ### Liste e statistiche
