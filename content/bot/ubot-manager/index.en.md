@@ -35,8 +35,9 @@ You need:
 
 - your Telegram account, connected to the bot with `/login`;
 - a Telegram folder containing the destination groups;
-- a channel (a broadcast channel, not a group) you are already a member of, to
-  use as the message source.
+- a channel (a broadcast channel, not a group) you created yourself, to
+  use as the message source. A channel created with another of your accounts
+  works too, the bot asks you to confirm it first.
 
 After the login Telegram warns you about a new session called **Windows 10
 Desktop**. That session is the bot. Do not terminate it: if you revoke it the
@@ -52,7 +53,8 @@ bot stops posting and you have to run `/login` again.
 4. Back on the bot, send `/spam` and tap **+ Add folder**. Pick the folder you
    just created.
 5. Inside the folder tap **Source channel** and choose the channel to take
-   messages from, or send its @username or invite link.
+   messages from, or send its @username or invite link. Channels you did not
+   create are marked ⚠️ and ask for a confirmation before being set.
 6. Tap **Set timer**, choose how often to post (every 2 hours, for example),
    whether to run forever or stop after a given number of runs, and optionally
    a fixed start time so the runs line up with the clock.
@@ -132,6 +134,14 @@ why.
 ### How do I change the source channel?
 
 Send `/spam`, open the folder, tap **Source channel** and pick another one.
+
+### Why does the bot warn me about some channels?
+
+The bot republishes the source channel's posts into every group of the
+folder. With a source you did not create, you end up sending other people's
+messages to those groups with no control over what goes out. Picking such a
+channel shows a warning and asks for a confirmation. If the channel really is
+yours, one you created with another account for instance, confirm it.
 
 ### Can I run more than one folder?
 

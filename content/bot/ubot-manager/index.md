@@ -36,8 +36,9 @@ Serve:
 
 - il tuo account Telegram, collegato al bot con `/login`;
 - una cartella Telegram che contiene i gruppi di destinazione;
-- un canale (di tipo canale, non gruppo) di cui sei già membro, da usare come
-  sorgente dei messaggi.
+- un canale (di tipo canale, non gruppo) creato da te, da usare come
+  sorgente dei messaggi. Puoi usare anche un canale creato da un tuo altro
+  account, il bot ti chiede conferma prima di accettarlo.
 
 Dopo il login Telegram ti segnala una nuova sessione chiamata **Windows 10
 Desktop**. Quella sessione è il bot. Non terminarla: se la revochi il bot
@@ -56,6 +57,8 @@ smette di pubblicare e devi rifare `/login`.
    cartella appena creata.
 5. Dentro la cartella premi **Canale sorgente** e scegli il canale da cui
    prendere i messaggi, oppure mandane l'@username o il link di invito.
+   I canali che non hai creato tu sono segnati con ⚠️ e chiedono una
+   conferma prima di essere impostati.
 6. Premi **Imposta timer**, scegli ogni quanto pubblicare (per esempio ogni
    2 ore), se andare avanti all'infinito o fermarsi dopo un certo numero di
    invii, ed eventualmente un orario fisso di partenza per allineare i giri
@@ -137,6 +140,15 @@ rifiutato gli ultimi invii e perché.
 
 Manda `/spam`, apri la cartella, premi **Canale sorgente** e scegline un
 altro.
+
+### Perché il bot mi avverte su certi canali?
+
+Il bot ripubblica i post del canale sorgente in tutti i gruppi della
+cartella. Se la sorgente è un canale che non hai creato tu, finisci per
+mandare nei gruppi quello che scrivono altri, senza controllo su cosa esce.
+Quando scegli un canale del genere il bot te lo segnala e ti chiede conferma.
+Se il canale è davvero tuo, per esempio creato con un tuo altro account,
+conferma pure.
 
 ### Posso gestire più cartelle insieme?
 
