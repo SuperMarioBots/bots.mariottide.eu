@@ -19,7 +19,9 @@ vuoi prorogare, allunghi la scadenza con un tocco.
 
 Ogni link vale per una persona sola e si consuma al primo uso, quindi non
 circola. Il conteggio parte quando la persona entra davvero nel canale, non
-quando generi il link.
+quando generi il link. Il link però va usato entro 24 ore: la data che il bot
+mostra accanto al link è questa scadenza, non quella dell'accesso. Se passa
+senza essere usato, generane uno nuovo.
 
 Il bot tiene l'elenco degli iscritti attivi con la data di scadenza di
 ognuno, e lo storico di chi è uscito, scaduto o è stato revocato. Funziona su
