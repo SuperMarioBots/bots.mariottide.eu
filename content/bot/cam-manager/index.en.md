@@ -19,7 +19,9 @@ its own. If you want to give them more time, one tap extends it.
 
 Each link is good for one person and burns on first use, so it does not get
 passed around. The countdown starts when the person actually joins the
-channel, not when you generate the link.
+channel, not when you generate the link. The link itself must be used within
+24 hours: the date the bot shows next to it is that deadline, not the end of
+the access. If it lapses unused, issue a new one.
 
 The bot keeps the list of active subscribers with each expiry date, plus the
 history of everyone who left, expired or was revoked. It handles several
