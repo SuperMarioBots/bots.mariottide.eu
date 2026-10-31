@@ -39,8 +39,7 @@ You need:
   use as the message source. A channel created with another of your accounts
   works too, the bot asks you to confirm it first.
 
-After the login Telegram warns you about a new session called **Windows 10
-Desktop**. That session is the bot. Do not terminate it: if you revoke it the
+After the login Telegram warns you about a new session called **ubot**. That session is the bot. Do not terminate it: if you revoke it the
 bot stops posting and you have to run `/login` again.
 
 ## Setup
@@ -114,7 +113,7 @@ same channel carries the news and the
 
 ## Frequently asked questions
 
-### Telegram flagged a "Windows 10 Desktop" session, is it safe?
+### Telegram flagged a "ubot" session, is it safe?
 
 Yes, that is the bot's connection to your account. Do not terminate it: if you
 revoke it the bot stops working.
