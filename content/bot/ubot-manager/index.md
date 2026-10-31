@@ -40,8 +40,7 @@ Serve:
   sorgente dei messaggi. Puoi usare anche un canale creato da un tuo altro
   account, il bot ti chiede conferma prima di accettarlo.
 
-Dopo il login Telegram ti segnala una nuova sessione chiamata **Windows 10
-Desktop**. Quella sessione è il bot. Non terminarla: se la revochi il bot
+Dopo il login Telegram ti segnala una nuova sessione chiamata **ubot**. Quella sessione è il bot. Non terminarla: se la revochi il bot
 smette di pubblicare e devi rifare `/login`.
 
 ## Configurazione
@@ -119,7 +118,7 @@ Sullo stesso canale trovi le novità e il
 
 ## Domande frequenti
 
-### Telegram mi segnala una sessione "Windows 10 Desktop", è sicuro?
+### Telegram mi segnala una sessione "ubot", è sicuro?
 
 Sì, è la connessione del bot al tuo account. Non terminarla: se la revochi il
 bot smette di funzionare.
