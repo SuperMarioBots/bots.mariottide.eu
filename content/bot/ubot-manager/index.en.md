@@ -155,6 +155,17 @@ it happens often, split the groups across more folders.
 Yes. Each folder has its own source channel, timer and settings. Add as many
 as you like.
 
+### I renamed or replaced a folder in Telegram
+
+If you rename a folder the bot follows it: timer and source channel are kept
+and you get a notice with the new name. If you delete it and create or add
+another one, even through a `t.me/addlist` link, Telegram may give it the same
+internal number as the old one. The bot treats it as a different folder when
+it has another name and less than half of the old groups: the old one is
+marked ⚠️ and stops posting, the new one shows up in **+ Add folder**. If you
+rename a folder and change almost all of its groups at the same time, it is
+handled the same way: add it again.
+
 ### Does the bot cost anything?
 
 No, it is free. Inside `/spam` there is a **Support ❤️** button with Telegram

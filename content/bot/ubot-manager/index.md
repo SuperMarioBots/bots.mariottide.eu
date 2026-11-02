@@ -162,6 +162,18 @@ cambia a ogni giro. Se succede spesso, dividi i gruppi in più cartelle.
 Sì. Ogni cartella ha canale sorgente, timer e impostazioni indipendenti.
 Aggiungine quante ne vuoi.
 
+### Ho rinominato o sostituito una cartella in Telegram
+
+Se rinomini una cartella il bot la segue: timer e canale sorgente restano e ti
+manda un avviso con il nuovo nome. Se invece la cancelli e ne crei o aggiungi
+un'altra, anche con un link `t.me/addlist`, Telegram può darle lo stesso numero
+interno di quella vecchia. Il bot la riconosce come una cartella diversa
+quando ha un altro nome e meno della metà dei gruppi di prima: la vecchia
+viene segnata con ⚠️ e smette di pubblicare, la nuova compare in
+**+ Aggiungi cartella**. Se rinomini una cartella e nello stesso momento ne
+cambi quasi tutti i gruppi, viene trattata allo stesso modo: aggiungila di
+nuovo.
+
 ### Il bot si paga?
 
 No. È gratuito. Dentro `/spam` c'è un bottone **Supporta ❤️** con Telegram
