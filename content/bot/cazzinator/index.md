@@ -49,7 +49,8 @@ sopra il testo che gli dai, in stile citazione motivazionale.
    comando: `#dick10m` nella didascalia, oppure `/dick10m` in risposta al
    media.
 5. Se vuoi la cancellazione automatica di tutto, un admin del gruppo dà
-   `/alldick 3h`. Con `/noalldick` la spegne.
+   `/alldick 3h`. Il bot conferma con la durata attiva. Con `/noalldick` la
+   spegne.
 
 ## Comandi
 
@@ -71,9 +72,9 @@ vuole la barra.
 
 | Comando | Cosa fa | Chi | Dove |
 |---|---|---|---|
-| `/setdick 1h30m` | Imposta la durata predefinita del gruppo. Il massimo è 24 ore, oltre viene tagliato | admin del gruppo | Gruppo |
-| `/alldick 3h` | Attiva la cancellazione automatica di tutti i media del gruppo e ne imposta la durata. Il tempo va sempre indicato | admin del gruppo | Gruppo |
-| `/noalldick` | Spegne la cancellazione automatica | admin del gruppo | Gruppo |
+| `/setdick 1h30m` | Imposta la durata predefinita di `#dick` e di `/dick` in risposta. Non cambia la cancellazione automatica di `/alldick`. Il massimo è 24 ore, oltre viene tagliato | admin del gruppo | Gruppo |
+| `/alldick 3h` | Attiva la cancellazione automatica di tutti i media del gruppo e ne imposta la durata, poi conferma con la durata attiva. Senza tempo (`/alldick`) riaccende la cancellazione con l'ultima durata impostata | admin del gruppo | Gruppo |
+| `/noalldick` | Spegne la cancellazione automatica e lo conferma | admin del gruppo | Gruppo |
 
 Il tempo si scrive attaccato, in ore e minuti: `30m`, `2h`, `1h30m`. Se non
 scrivi niente il bot ti risponde con l'esempio giusto.
@@ -125,7 +126,9 @@ diversa da `dick`.
 ### Quanto dura di default?
 
 Due ore per il singolo media, tre ore per la cancellazione automatica di
-`/alldick`. Un admin cambia la prima con `/setdick`.
+`/alldick`. Sono due valori separati: un admin cambia il primo con
+`/setdick` e il secondo con `/alldick` seguito dal tempo, per esempio
+`/alldick 6h`.
 
 ### Posso mettere una settimana?
 
