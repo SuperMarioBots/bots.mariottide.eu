@@ -45,8 +45,8 @@ hours.
    (or `1h30m`, up to 24 hours).
 4. For a one off you can override the default by sticking the time onto the
    command: `#dick10m` in the caption, or `/dick10m` as a reply to the media.
-5. To delete everything automatically, a group admin sends `/alldick 3h`. `/noalldick` turns
-   it back off.
+5. To delete everything automatically, a group admin sends `/alldick 3h`. The bot
+   confirms with the active delay. `/noalldick` turns it back off.
 
 ## Commands
 
@@ -67,9 +67,9 @@ The delete commands work with `/` and with `#`. `/unsplash` needs the slash.
 
 | Command | What it does | Who | Where |
 |---|---|---|---|
-| `/setdick 1h30m` | Sets the group default delay. The cap is 24 hours, anything above is trimmed | group admin | Group |
-| `/alldick 3h` | Turns on automatic deletion of every media in the group and sets the delay. The time is always required | group admin | Group |
-| `/noalldick` | Turns automatic deletion off | group admin | Group |
+| `/setdick 1h30m` | Sets the default delay of `#dick` and of the `/dick` reply. It does not change the automatic deletion of `/alldick`. The cap is 24 hours, anything above is trimmed | group admin | Group |
+| `/alldick 3h` | Turns on automatic deletion of every media in the group, sets the delay and confirms it. Without a time (`/alldick`) it turns deletion back on with the last delay set | group admin | Group |
+| `/noalldick` | Turns automatic deletion off and confirms it | group admin | Group |
 
 Write the delay with no spaces, in hours and minutes: `30m`, `2h`, `1h30m`.
 Send it empty and the bot answers with the correct example.
@@ -119,7 +119,9 @@ fail. Check the word too: in a clone it can be something other than `dick`.
 ### What are the defaults?
 
 Two hours for a single media, three hours for the automatic deletion of
-`/alldick`. An admin changes the first one with `/setdick`.
+`/alldick`. They are separate values: an admin changes the first one with
+`/setdick` and the second one with `/alldick` plus the time, for example
+`/alldick 6h`.
 
 ### Can I set a week?
 
