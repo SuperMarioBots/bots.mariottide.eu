@@ -88,6 +88,11 @@ Il testo deve **iniziare** con la parola di innesco: `@all ragazzi` funziona,
 Queste impostazioni valgono per tutto il gruppo, anche se le dai dentro un
 topic.
 
+Se il bot è amministratore del gruppo, le risposte a questi comandi le vede
+solo l'admin che li ha dati. Altrimenti il bot risponde in chiaro a tutti:
+Telegram permette i messaggi visibili a una sola persona solo ai bot
+amministratori.
+
 ### Per chi possiede un clone
 
 | Comando | Cosa fa | Chi | Dove |
@@ -113,7 +118,9 @@ trovi nella tendina `/` senza fare niente.
 
 Un tag alla volta per topic. Se qualcuno ne lancia un altro mentre il primo
 sta ancora andando, il bot risponde "@all già in corso, questo comando sarà
-ignorato" e cancella l'avviso dopo qualche secondo.
+ignorato". Se il bot è amministratore, l'avviso lo vede solo chi ha lanciato
+il secondo tag e sparisce da solo; altrimenti è visibile a tutti e il bot lo
+cancella dopo qualche secondo.
 
 Quando il bot risponde al messaggio che ha fatto partire il tag e quel
 messaggio viene cancellato, il bot si ferma e avvisa che l'originale non c'è

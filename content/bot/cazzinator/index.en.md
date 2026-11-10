@@ -39,8 +39,8 @@ hours.
 ## Configuration
 
 1. Add the bot to the group and promote it to admin with **Delete messages**.
-2. Send a photo with `#dick` in the caption. The bot replies with the moment
-   the media will disappear.
+2. Send a photo with `#dick` in the caption. The bot replies, in a message
+   only you can see, with the moment the media will disappear.
 3. If two hours is not right for your group, an admin sends `/setdick 30m`
    (or `1h30m`, up to 24 hours).
 4. For a one off you can override the default by sticking the time onto the
@@ -94,8 +94,15 @@ previous owner no longer manages it. Right after that, use `/revoke` in
 The bot has no buttons.
 
 For every scheduled media it replies with "This message will be deleted" and
-the moment it will happen. That notice disappears together with the media, so
-nothing is left behind in the chat.
+the moment it will happen. Only the person who sent the command sees that
+notice: other members see nothing, and the notice goes away by itself. If the
+command comes from an anonymous admin, the notice is public and disappears
+together with the media.
+
+Replies to `/setdick`, `/alldick` and `/noalldick` are also shown only to the
+person who sent the command, as long as the bot is a group admin. Otherwise
+the bot replies publicly: Telegram only lets admin bots send messages that a
+single person can see.
 
 Send the command again on the same media and the old timer is dropped in
 favour of the new one. That also covers **editing** the caption to add the

@@ -41,8 +41,8 @@ sopra il testo che gli dai, in stile citazione motivazionale.
 
 1. Aggiungi il bot al gruppo e promuovilo amministratore con il permesso
    **Elimina messaggi**.
-2. Manda una foto scrivendo `#dick` nella didascalia. Il bot risponde con il
-   momento in cui il media sparirà.
+2. Manda una foto scrivendo `#dick` nella didascalia. Il bot ti risponde,
+   con un messaggio che vedi solo tu, con il momento in cui il media sparirà.
 3. Se due ore non sono la durata giusta per il tuo gruppo, un admin dà
    `/setdick 30m` (oppure `1h30m`, fino a un massimo di 24 ore).
 4. Per una singola volta puoi scavalcare il predefinito attaccando il tempo al
@@ -100,8 +100,15 @@ vecchio token.
 Il bot non ha bottoni.
 
 A ogni media programmato risponde con "Questo messaggio sarà cancellato" e il
-momento in cui succederà. Quel messaggio di servizio sparisce insieme al
-media, quindi in chat non resta traccia.
+momento in cui succederà. L'avviso lo vede solo chi ha dato il comando: gli
+altri membri non vedono niente e l'avviso sparisce da solo. Se il comando
+arriva da un admin anonimo, l'avviso è visibile a tutti e sparisce insieme al
+media.
+
+Anche le risposte a `/setdick`, `/alldick` e `/noalldick` le vede solo chi ha
+dato il comando, purché il bot sia amministratore del gruppo. Altrimenti il
+bot risponde in chiaro a tutti: Telegram permette i messaggi visibili a una
+sola persona solo ai bot amministratori.
 
 Se rilanci il comando sullo stesso media, il timer vecchio viene buttato via e
 vale l'ultimo. Vale anche se aggiungi il comando **modificando** la didascalia
