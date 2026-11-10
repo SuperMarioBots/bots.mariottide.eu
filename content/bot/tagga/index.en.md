@@ -86,6 +86,10 @@ The message has to **start** with the trigger word: `@all everyone` works,
 These settings apply to the whole group, even if you send them inside a
 topic.
 
+If the bot is a group admin, only the admin who sent one of these commands
+sees the reply. Otherwise the bot replies publicly: Telegram only lets admin
+bots send messages that a single person can see.
+
 ### If you own a clone
 
 | Command | What it does | Who | Where |
@@ -109,8 +113,10 @@ When it joins a group it registers its own command menu, so the commands show
 up in the `/` list without you doing anything.
 
 One tag at a time per topic. If somebody starts another one while the first is
-still running, the bot answers that a tag is already in progress and deletes
-that warning a few seconds later.
+still running, the bot answers that a tag is already in progress. If the bot
+is an admin, only the person who started the second tag sees that warning and
+it goes away by itself; otherwise it is public and the bot deletes it a few
+seconds later.
 
 When the bot replies to the message that started the tag and that message gets
 deleted, the bot stops and says the original is gone.
