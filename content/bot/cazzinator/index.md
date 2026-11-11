@@ -119,7 +119,11 @@ sola e spariscono tutte.
 
 Con `/alldick` attivo il bot mette in coda da solo ogni foto, video, GIF,
 sticker, videobolla, storia e documento che arriva nel gruppo, senza che
-nessuno scriva niente.
+nessuno scriva niente. Chi ha mandato il media riceve lo stesso avviso
+"Questo messaggio sarà cancellato", visibile solo a lui: uno per media, uno
+solo per un intero album. Se il bot non può mandare messaggi visibili a una
+sola persona (non è amministratore, oppure il media arriva da un admin
+anonimo), mette in coda in silenzio.
 
 ## Domande frequenti
 
