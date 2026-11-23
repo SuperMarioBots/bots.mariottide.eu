@@ -219,6 +219,9 @@ Senza che nessuno scriva niente, il bot:
   bottoni **Metti in lista**, **Controlla**, **Amministratori** e **Rimuovi
   il bot**;
 - controlla i permessi a ogni cambio di ruolo e scrive cosa manca;
+- una volta al giorno controlla se qualche manager è bannato da una chat della
+  lista e lo segnala in chat staff, ma solo quando la situazione cambia: lo
+  stesso avviso non arriva tutti i giorni;
 - pubblica i post programmati alle ore stabilite, li fissa se glielo hai
   chiesto e cancella il post precedente;
 - apre e chiude le prenotazioni insieme al post, se hai impostato così la

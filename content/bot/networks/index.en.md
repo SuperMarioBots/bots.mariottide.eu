@@ -215,6 +215,9 @@ Without anybody typing anything, the bot:
   **Add to list**, **Check**, **Administrators** and **Remove the bot**
   buttons;
 - checks the permissions on every role change and says what is missing;
+- once a day checks whether any manager is banned from a chat of the list and
+  reports it in the staff chat, but only when the situation changes: the same
+  warning is not repeated every day;
 - publishes the scheduled posts at the set times, pins them if you asked for
   it and deletes the previous post;
 - opens and closes the bookings along with the post, if the schedule says so;
