@@ -207,7 +207,9 @@ Il menu di `/start` per i manager ha queste voci:
 Dentro le impostazioni: **💌 Configura messaggio template** è il testo della
 lista, **⬆️ Configura bottoni fissi in alto** e **⬇️ Configura bottoni fissi
 in fondo** aggiungono bottoni sopra e sotto, **🔗 Configura link "dummy"** è
-il link usato dai separatori, **📑 Configura sottoliste** divide la lista in
+il link usato dai separatori (deve essere un URL: `http://`, `https://`,
+`tg://`, `t.me/` oppure `@canale`, altrimenti il bot lo rifiuta), **📑 Configura
+sottoliste** divide la lista in
 sezioni, **📋 Configura formato lista** decide colonne e comportamento nei
 gruppi con i topic, **#️⃣ Configura tag #prenota** cambia il comando di
 prenotazione. Se il bot gestisce una lista sola e non ha bot slave, compare

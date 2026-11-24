@@ -204,7 +204,9 @@ The `/start` menu for managers holds these entries:
 Inside the settings: **💌 Configure template message** is the list text,
 **⬆️ Configure top pinned buttons** and **⬇️ Configure bottom pinned buttons**
 add buttons above and below, **🔗 Configure "dummy" link** is the link the
-separators use, **📑 Configure sublists** splits the list into sections,
+separators use (it must be a URL: `http://`, `https://`, `tg://`, `t.me/` or
+`@channel`, otherwise the bot rejects it), **📑 Configure sublists** splits the
+list into sections,
 **📋 Configure list format** decides the columns and the behaviour in groups
 with topics, **#️⃣ Configure #reserve tag** changes the booking command. When the bot runs a
 single list and has no slave bots, **🤖 Configure master bot** shows up too.
